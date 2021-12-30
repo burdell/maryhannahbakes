@@ -6,6 +6,8 @@ module.exports = {
     extend: {
       height: {
         logoHeight: '278px',
+        headerLogoHeight: '76px',
+        headerLogoWidth: '200px',
       },
       fontFamily: {
         sans: ['Poppins', 'Georgia', 'sans-serif'],

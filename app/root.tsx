@@ -25,7 +25,7 @@ export const links: LinksFunction = () => {
     {
       rel: 'stylesheet',
       href:
-        'https://fonts.googleapis.com/css2?family=Poppins&family=Spectral:wght@300;400&display=swap',
+        'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Spectral:wght@300;400&display=swap',
     },
     { rel: 'stylesheet', href: tailwind },
   ]
