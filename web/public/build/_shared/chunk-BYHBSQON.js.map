@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/Header.tsx"],
+  "sourcesContent": ["import { Link, LinkProps } from 'react-router-dom'\n\nexport function Header() {\n  return (\n    <div className=\"p-6\">\n      <Link to=\"/\">\n        <div className=\"bg-[url('/logo-sm.png')] h-headerLogoHeight bg-no-repeat bg-contain bg-left\" />\n      </Link>\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;AAAA,8BAAgC;AAEzB,kBAAkB;AACvB,SACE,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,8BAAD;AAAA,IAAM,IAAG;AAAA,KACP,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA;AAAA;",
+  "names": []
+}

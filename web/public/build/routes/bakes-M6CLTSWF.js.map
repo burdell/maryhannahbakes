@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/bakes.tsx?browser", "../../../app/routes/bakes.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/bakes.tsx\";", "import { Link, LinkProps } from 'react-router-dom'\n\nimport { Header } from '~/components/Header'\n\nexport default function Index() {\n  return (\n    <div>\n      <Header />\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAIe,iBAAiB;AAC9B,SACE,oCAAC,OAAD,MACE,oCAAC,QAAD;AAAA;",
+  "names": []
+}

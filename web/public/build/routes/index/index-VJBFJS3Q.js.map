@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/index/index.tsx?browser", "../../../../app/routes/index/index.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/index/index.tsx\";", "export default function Index() {\n  return (\n    <div>\n      <img src=\"./logo.png\" />\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAAe,iBAAiB;AAC9B,SACE,oCAAC,OAAD,MACE,oCAAC,OAAD;AAAA,IAAK,KAAI;AAAA;AAAA;",
+  "names": []
+}

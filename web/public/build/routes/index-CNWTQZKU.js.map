@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/index.tsx?browser", "../../../app/routes/index.tsx"],
+  "sourcesContent": ["export { default, links } from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/index.tsx\";", "import { LinksFunction } from 'remix'\n\nimport styles from '~/styles/index.css'\n\nexport const links: LinksFunction = () => {\n  return [{ rel: 'stylesheet', href: styles }]\n}\n\nexport default function Index() {\n  return (\n    <div>\n      <div>\n        <img className=\"object-cover\" />\n      </div>\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;;;;;;AAIO,IAAM,QAAuB,MAAM;AACxC,SAAO,CAAC,EAAE,KAAK,cAAc,MAAM;AAAA;AAGtB,iBAAiB;AAC9B,SACE,oCAAC,OAAD,MACE,oCAAC,OAAD,MACE,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA;AAAA;",
+  "names": []
+}

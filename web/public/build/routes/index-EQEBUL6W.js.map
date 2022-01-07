@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/index.tsx?browser", "../../../app/routes/index.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/index.tsx\";", "import { Link, LinkProps } from 'react-router-dom'\n\nfunction PageLink({}: LinkProps) {\n  return <a href=\"/bakes\">Bakes</a>\n}\n\nexport default function Index() {\n  return (\n    <div className=\"flex h-screen items-center flex-col\">\n      <div className=\"flex-1 w-full\">\n        <div className=\"bg-[url('/logo-med.png')] h-logoHeight bg-no-repeat bg-contain bg-center\" />\n      </div>\n      <div className=\"font-sans flex-1\">\n        <a href=\"/bakes\">Bakes</a>\n      </div>\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAMe,iBAAiB;AAC9B,SACE,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,OAEjB,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,KAAD;AAAA,IAAG,MAAK;AAAA,KAAS;AAAA;",
+  "names": []
+}

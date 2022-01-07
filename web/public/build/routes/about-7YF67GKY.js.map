@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/about.tsx?browser", "../../../app/routes/about.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/about.tsx\";", "import { Link, LinkProps } from 'react-router-dom'\n\nexport default function Index() {\n  return <div>a b o u t</div>\n}\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAEe,iBAAiB;AAC9B,SAAO,oCAAC,OAAD,MAAK;AAAA;",
+  "names": []
+}

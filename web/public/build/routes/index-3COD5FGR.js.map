@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/index.tsx?browser", "../../../app/routes/index.tsx"],
+  "sourcesContent": ["export { default, links } from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/index.tsx\";", "import type { LinksFunction } from 'remix'\n\nexport const links: LinksFunction = () => {\n  return [\n    {\n      rel: 'icon',\n      href: '/favicon.png',\n      type: 'image/png',\n    },\n    {\n      rel: 'stylesheet',\n      href: 'https://unpkg.com/modern-css-reset@1.4.0/dist/reset.min.css',\n    },\n    {\n      rel: 'stylesheet',\n      href:\n        'https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap',\n    },\n  ]\n}\n\nexport default function Index() {\n  return (\n    <div>\n      <h1>mary hannah bakes</h1>\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;AAAA;;;ACAA;AAEO,IAAM,QAAuB,MAAM;AACxC,SAAO;AAAA,IACL;AAAA,MACE,KAAK;AAAA,MACL,MAAM;AAAA,MACN,MAAM;AAAA;AAAA,IAER;AAAA,MACE,KAAK;AAAA,MACL,MAAM;AAAA;AAAA,IAER;AAAA,MACE,KAAK;AAAA,MACL,MACE;AAAA;AAAA;AAAA;AAKO,iBAAiB;AAC9B,SACE,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI;AAAA;",
+  "names": []
+}

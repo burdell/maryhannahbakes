@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/links.ts?browser", "../../../app/routes/links.ts"],
+  "sourcesContent": ["export { links } from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/links.ts\";", "import type { LinksFunction } from 'remix'\n\nexport const links: LinksFunction = () => {\n  return [\n    {\n      rel: 'icon',\n      href: '/favicon.png',\n      type: 'image/png',\n    },\n  ]\n}\n"],
+  "mappings": ";;;;;AAAA;;;ACAA;AAEO,IAAM,QAAuB,MAAM;AACxC,SAAO;AAAA,IACL;AAAA,MACE,KAAK;AAAA,MACL,MAAM;AAAA,MACN,MAAM;AAAA;AAAA;AAAA;",
+  "names": []
+}

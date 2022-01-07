@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/bakes.tsx?browser"],
+  "sourcesContent": ["export * from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/bakes.tsx\";"],
+  "mappings": ";;;;;AAAA;",
+  "names": []
+}

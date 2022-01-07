@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/bakes.tsx?browser", "../../../app/routes/bakes.tsx"],
+  "sourcesContent": ["export { default } from \"/Users/nathangriffin/Desktop/maryhannahbakes/app/routes/bakes.tsx\";", "import { Link, LinkProps } from 'react-router-dom'\n\nimport { Header } from '~/components/Header'\nimport { PageContent } from '~/components/PageContent'\n\nexport default function Index() {\n  return (\n    <div>\n      <Header />\n      <PageContent heading=\"About\">\n        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\n        tempor incididunt ut labore et dolore magna aliqua. Sed id semper risus\n        in hendrerit gravida rutrum quisque non. Cras adipiscing enim eu turpis\n        egestas pretium. Non enim praesent elementum facilisis. Diam in arcu\n        cursus euismod quis. Sed odio morbi quis commodo. Libero id faucibus\n        nisl tincidunt eget nullam. Lacus sed turpis tincidunt id aliquet risus\n        feugiat in ante. Nulla malesuada pellentesque elit eget gravida. Mauris\n        commodo quis imperdiet massa tincidunt nunc pulvinar. Non odio euismod\n        lacinia at quis risus.\n      </PageContent>\n    </div>\n  )\n}\n"],
+  "mappings": ";;;;;;;;;;;;AAAA;;;ACAA;AAKe,iBAAiB;AAC9B,SACE,oCAAC,OAAD,MACE,oCAAC,QAAD,OACA,oCAAC,aAAD;AAAA,IAAa,SAAQ;AAAA,KAAQ;AAAA;",
+  "names": []
+}
