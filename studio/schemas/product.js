@@ -17,22 +17,7 @@ export default {
         maxLength: 96,
       },
     },
-    {
-      title: 'Default variant',
-      name: 'defaultProductVariant',
-      type: 'productVariant',
-    },
-    {
-      title: 'Variants',
-      name: 'variants',
-      type: 'array',
-      of: [
-        {
-          title: 'Variant',
-          type: 'productVariant',
-        },
-      ],
-    },
+
     {
       title: 'Tags',
       name: 'tags',
@@ -47,12 +32,6 @@ export default {
       },
     },
     {
-      name: 'vendor',
-      title: 'Vendor',
-      type: 'reference',
-      to: {type: 'vendor'},
-    },
-    {
       name: 'blurb',
       title: 'Blurb',
       type: 'localeString',
@@ -64,7 +43,7 @@ export default {
       of: [
         {
           type: 'reference',
-          to: {type: 'category'},
+          to: { type: 'category' },
         },
       ],
     },
@@ -79,7 +58,6 @@ export default {
     select: {
       title: 'title',
       manufactor: 'manufactor.title',
-      media: 'defaultProductVariant.images[0]',
     },
   },
 }

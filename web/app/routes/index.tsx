@@ -1,4 +1,8 @@
 import { Link, LinkProps } from 'react-router-dom'
+import { useLoaderData } from 'remix'
+
+import type { Page } from '~/lib/sanity/types'
+import { usePageData } from '~/data'
 
 function PageLink({ children, ...props }: LinkProps) {
   return (
@@ -13,14 +17,15 @@ function PageLink({ children, ...props }: LinkProps) {
 }
 
 export default function Index() {
+  let { pages } = usePageData()
   return (
     <div className="flex h-screen items-center flex-col sm:justify-center md:-mt-8">
       <div className="w-full">
         <div className="bg-[url('/logo-med.png')] h-logoHeight bg-no-repeat bg-contain bg-center" />
         <div className="flex-1 flex justify-center mt-14 flex-col sm:flex-row">
-          <PageLink to="/about">About</PageLink>
-          <PageLink to="/bakes">Bakes</PageLink>
-          <PageLink to="/events">Events</PageLink>
+          {pages.map((page) => (
+            <PageLink to={page.slug}>{page.title}</PageLink>
+          ))}
         </div>
       </div>
     </div>

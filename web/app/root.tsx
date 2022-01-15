@@ -6,10 +6,12 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  useLoaderData,
 } from 'remix'
 import type { MetaFunction } from 'remix'
 
 import tailwind from './tailwind.css'
+import { getPages, PageDataProvider } from '~/data'
 
 export const links: LinksFunction = () => {
   return [
@@ -34,7 +36,14 @@ export const meta: MetaFunction = () => {
   return { title: 'Mary Hannah Bakes' }
 }
 
+export async function loader() {
+  const pages = await getPages()
+  return { pages }
+}
+type LoaderData = AsyncReturnType<typeof loader>
+
 export default function App() {
+  let { pages } = useLoaderData<LoaderData>()
   return (
     <html lang="en">
       <head>
@@ -44,10 +53,12 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        {process.env.NODE_ENV === 'development' && <LiveReload />}
+        <PageDataProvider value={{ pages }}>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          {process.env.NODE_ENV === 'development' && <LiveReload />}
+        </PageDataProvider>
       </body>
     </html>
   )

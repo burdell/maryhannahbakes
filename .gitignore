@@ -1,8 +1,8 @@
 node_modules
-/.cache
-/netlify/functions/server/build
-/public/build
-/.netlify
+.cache
+/web/netlify/functions/server/build
+/web/public/build
+/web/.netlify
 
 # Local Netlify folder
 .netlify
