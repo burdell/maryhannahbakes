@@ -1,5 +1,5 @@
 {
-  "version": "5a545d19",
+  "version": "803d59eb",
   "entry": {
     "module": "/build/entry.client-NN47QZXP.js",
     "imports": [
@@ -11,9 +11,9 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-ZS6FN262.js",
+      "module": "/build/root-5P3POMWL.js",
       "imports": [
-        "/build/_shared/chunk-CTXLZNWY.js"
+        "/build/_shared/chunk-CKPPP245.js"
       ],
       "hasAction": false,
       "hasLoader": true,
@@ -24,9 +24,9 @@
       "id": "routes/$pageId",
       "parentId": "root",
       "path": ":pageId",
-      "module": "/build/routes/$pageId-ZQGPURPR.js",
+      "module": "/build/routes/$pageId-KKFBJYDE.js",
       "hasAction": false,
-      "hasLoader": false,
+      "hasLoader": true,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     },
@@ -34,12 +34,12 @@
       "id": "routes/index",
       "parentId": "root",
       "index": true,
-      "module": "/build/routes/index-UU52AAEW.js",
+      "module": "/build/routes/index-GHOB7O2I.js",
       "hasAction": false,
       "hasLoader": false,
       "hasCatchBoundary": false,
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-5A545D19.js"
+  "url": "/build/manifest-803D59EB.js"
 }

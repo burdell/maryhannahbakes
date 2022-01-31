@@ -11,6 +11,14 @@ export async function getPages() {
   return pages
 }
 
+export async function getPage(pageId: string) {
+  const query =
+    '*[_type == "page" && slug.current == $pageId] { title, "slug": slug.current, text } | order(_updatedAt desc) [0]'
+
+  const pageData = await getClient().fetch<Page>(query, { pageId })
+  return pageData
+}
+
 export const PageContext = createContext<{ pages: Page[] } | undefined>(
   undefined,
 )

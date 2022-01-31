@@ -17,6 +17,11 @@ export default {
         maxLength: 96,
       },
     },
+    {
+      name: 'text',
+      title: 'Page Text',
+      type: 'blockContent',
+    },
   ],
 
   preview: {

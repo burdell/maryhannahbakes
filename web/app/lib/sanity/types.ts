@@ -1,3 +1,5 @@
+import { BlockContentProps } from '@sanity/block-content-to-react'
+
 type SanityDocument = {
   _id: string
 }
@@ -5,4 +7,5 @@ type SanityDocument = {
 export type Page = SanityDocument & {
   slug: string
   title: string
+  text: BlockContentProps
 }

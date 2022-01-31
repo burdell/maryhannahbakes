@@ -7,7 +7,6 @@ function PageLink({
   ...props
 }: Omit<NavLinkProps, 'to'> & { to: string }) {
   const match = useMatch(props.to)
-  console.log(match, props.to)
   return (
     <div>
       <NavLink {...props}>

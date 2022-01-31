@@ -1,22 +1,45 @@
 import { Link, LinkProps } from 'react-router-dom'
+import { LinksFunction, useLoaderData } from 'remix'
+import type { LoaderFunction } from 'remix'
 
 import { Header } from '~/components/Header'
 import { PageContent } from '~/components/PageContent'
+import { getPage } from '~/data'
+import { Page } from '~/lib/sanity/types'
+import { BlockContent } from '~/components/BlockContent'
+
+import blockContent from '~/components/BlockContent/styles.css'
+
+export const links: LinksFunction = () => {
+  return [{ rel: 'stylesheet', href: blockContent }]
+}
+
+export const loader: LoaderFunction = async ({ params }) => {
+  const pageId = params.pageId
+  if (!pageId) {
+    throw new Response('Not Found', {
+      status: 404,
+    })
+  }
+
+  const page = await getPage(pageId)
+  if (!page) {
+    throw new Response('Not Found', {
+      status: 404,
+    })
+  }
+
+  return page
+}
 
 export default function Index() {
+  const page = useLoaderData<Page>()
+  console.log('=== page', page)
   return (
     <div>
       <Header />
-      <PageContent heading="About">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Sed id semper risus
-        in hendrerit gravida rutrum quisque non. Cras adipiscing enim eu turpis
-        egestas pretium. Non enim praesent elementum facilisis. Diam in arcu
-        cursus euismod quis. Sed odio morbi quis commodo. Libero id faucibus
-        nisl tincidunt eget nullam. Lacus sed turpis tincidunt id aliquet risus
-        feugiat in ante. Nulla malesuada pellentesque elit eget gravida. Mauris
-        commodo quis imperdiet massa tincidunt nunc pulvinar. Non odio euismod
-        lacinia at quis risus.
+      <PageContent heading={page.title}>
+        {page.text && <BlockContent blocks={page.text} />}
       </PageContent>
     </div>
   )

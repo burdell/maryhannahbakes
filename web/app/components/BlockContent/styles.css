@@ -1,0 +1,43 @@
+.block-content h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.block-content h1 {
+  font-size: 3rem;
+}
+.block-content h2 {
+  font-size: 2rem;
+}
+.block-content h3 {
+  font-size: 1.5rem;
+}
+.block-content h4 {
+  font-size: 1.2rem;
+}
+
+.block-content p {
+  margin-bottom: 1rem;
+}
+
+.block-content blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 1em 10px;
+  quotes: '\201C''\201D''\2018''\2019';
+}
+.block-content blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.block-content blockquote p {
+  display: inline;
+}
