@@ -1,7 +1,7 @@
 import { useContext, createContext } from 'react'
 
 import { getClient } from '~/lib/sanity/getClient'
-import type { Page } from '~/lib/sanity/types'
+import type { Page, Bake } from '~/lib/sanity/types'
 
 export async function getPages() {
   const pages = await getClient().fetch<Page[]>(
@@ -33,4 +33,12 @@ export function usePageData() {
   }
 
   return data
+}
+
+export async function getBakes() {
+  const query =
+    '*[_type == "bake"] { _id, name, body, pictures[]{ asset->{url, assetId} }, blurb, categories[]->{title, slug} } | order(_updatedAt desc)'
+
+  const pageData = await getClient().fetch<Bake[]>(query, {})
+  return pageData
 }

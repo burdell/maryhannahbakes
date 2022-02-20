@@ -9,3 +9,17 @@ export type Page = SanityDocument & {
   title: string
   text: BlockContentProps
 }
+
+export type Picture = SanityDocument & {
+  asset: {
+    assetId: string
+    url: string
+  }
+}
+
+export type Bake = SanityDocument & {
+  name: string
+  pictures: Picture[]
+  blurb: string
+  body: BlockContentProps
+}

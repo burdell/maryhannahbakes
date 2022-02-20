@@ -6,7 +6,7 @@ function PageLink({ children, ...props }: LinkProps) {
   return (
     <div>
       <Link {...props}>
-        <div className="border rounded-sm border-solid border-slate-700 mx-2 text-2xl px-8 py-2 mb-6 text-center text-slate-00 font-light hover:text-yellow-600 hover:border-yellow-600 transition-colors">
+        <div className="border-b-2 border-solid border-transparent mx-2 text-2xl px-8 py-2 mb-6 text-center text-slate-00 font-light hover:text-yellow-600 hover:border-yellow-600 transition-colors">
           {children}
         </div>
       </Link>

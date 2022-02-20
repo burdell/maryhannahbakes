@@ -6,7 +6,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 // We import object and document schemas
 import blockContent from './blockContent'
 import category from './category'
-import product from './product'
+import bake from './bake'
 import page from './page'
 
 import localeString from './locale/String'
@@ -19,17 +19,5 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([
-    // The following are document types which will appear
-    // in the studio.
-    product,
-    category,
-    // When added to this list, object types can be used as
-    // { type: 'typename' } in other document schemas
-    blockContent,
-    localeText,
-    localeBlockContent,
-    localeString,
-    page,
-  ]),
+  types: schemaTypes.concat([bake, category, blockContent, localeString, page]),
 })

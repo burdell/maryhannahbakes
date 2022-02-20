@@ -23,6 +23,11 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.block-content a {
+  color: #ca8a04;
+  text-decoration: underline;
+}
+
 .block-content blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
