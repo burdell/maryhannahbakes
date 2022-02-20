@@ -475,6 +475,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -559,6 +569,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
 .flex-initial {
   flex: 0 1 auto;
 }
@@ -609,6 +623,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-sm {

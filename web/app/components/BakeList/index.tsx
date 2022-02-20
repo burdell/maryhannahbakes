@@ -96,8 +96,8 @@ export function BakeList({ bakes }: { bakes: BakeType[] }) {
             }}
             aria-label="shown-bake"
           >
-            <div>
-              <div className="flex justify-end">
+            <>
+              <div className="flex justify-end mb-2">
                 <button
                   className="uppercase hover:text-yellow-600 transition-colors"
                   onClick={close}
@@ -106,7 +106,7 @@ export function BakeList({ bakes }: { bakes: BakeType[] }) {
                 </button>
               </div>
               <BakePictures bake={shownBake} />
-              <div>
+              <>
                 <div className="text-lg text-slate-00 font-sans">
                   {shownBake.name}
                 </div>
@@ -116,8 +116,8 @@ export function BakeList({ bakes }: { bakes: BakeType[] }) {
                     <BlockContent blocks={shownBake.body} />
                   </div>
                 )}
-              </div>
-            </div>
+              </>
+            </>
           </DialogContent>
         </DialogOverlay>
       )}

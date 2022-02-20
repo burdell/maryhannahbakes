@@ -52,7 +52,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="max-w-screen-xl my-0 mx-auto">
         <PageDataProvider value={{ pages }}>
           <Outlet />
           <ScrollRestoration />
