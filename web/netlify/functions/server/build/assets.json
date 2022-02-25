@@ -1,5 +1,5 @@
 {
-  "version": "e688ebd6",
+  "version": "fdf8d927",
   "entry": {
     "module": "/build/entry.client-CQI2H32F.js",
     "imports": [
@@ -12,7 +12,7 @@
     "root": {
       "id": "root",
       "path": "",
-      "module": "/build/root-6OFA4BRK.js",
+      "module": "/build/root-GPPQXEWM.js",
       "imports": [
         "/build/_shared/chunk-5CVIGHC6.js"
       ],
@@ -42,5 +42,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-E688EBD6.js"
+  "url": "/build/manifest-FDF8D927.js"
 }

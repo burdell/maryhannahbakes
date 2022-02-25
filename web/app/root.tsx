@@ -52,9 +52,11 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="max-w-screen-xl my-0 mx-auto">
+      <body>
         <PageDataProvider value={{ pages }}>
-          <Outlet />
+          <div className="max-w-screen-xl my-0 mx-auto">
+            <Outlet />
+          </div>
           <ScrollRestoration />
           <Scripts />
           {process.env.NODE_ENV === 'development' && <LiveReload />}
