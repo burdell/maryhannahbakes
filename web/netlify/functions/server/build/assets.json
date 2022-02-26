@@ -1,9 +1,9 @@
 {
-  "version": "fdf8d927",
+  "version": "8c44943d",
   "entry": {
-    "module": "/build/entry.client-CQI2H32F.js",
+    "module": "/build/entry.client-ISW44S2B.js",
     "imports": [
-      "/build/_shared/chunk-JXOIZFWY.js",
+      "/build/_shared/chunk-SESI6WOJ.js",
       "/build/_shared/chunk-CHQDC2K5.js",
       "/build/_shared/chunk-GHK3HHDO.js"
     ]
@@ -25,7 +25,7 @@
       "id": "routes/$pageId",
       "parentId": "root",
       "path": ":pageId",
-      "module": "/build/routes/$pageId-ZDARNRDP.js",
+      "module": "/build/routes/$pageId-PXV37BHR.js",
       "hasAction": false,
       "hasLoader": true,
       "hasCatchBoundary": false,
@@ -42,5 +42,5 @@
       "hasErrorBoundary": false
     }
   },
-  "url": "/build/manifest-FDF8D927.js"
+  "url": "/build/manifest-8C44943D.js"
 }

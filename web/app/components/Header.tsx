@@ -10,9 +10,9 @@ export function Header() {
       <NavLink className="w-64 flex-initial mb-4 lg:mb-0" to="/">
         <div className="bg-[url('/logo-sm.png')] h-headerLogoHeight bg-no-repeat bg-contain bg-left" />
       </NavLink>
-      <div className="flex flex-1 items-center">
+      <div className="flex items-center">
         {pages.map((page) => (
-          <PageLink key={page.slug} to={`/${page.slug}`}>
+          <PageLink key={page.slug} to={`/${page.slug}`} className="flex-1">
             <div>{page.title}</div>
           </PageLink>
         ))}

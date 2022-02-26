@@ -55,7 +55,7 @@ export default function Index() {
   const { page, bakes } = useLoaderData<PageData>()
 
   return (
-    <div>
+    <>
       <Header />
       <PageContent heading={page.title}>
         {page.text && <BlockContent blocks={page.text} />}
@@ -65,6 +65,6 @@ export default function Index() {
           </div>
         ) : null}
       </PageContent>
-    </div>
+    </>
   )
 }
