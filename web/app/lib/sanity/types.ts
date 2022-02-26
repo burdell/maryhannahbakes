@@ -8,6 +8,7 @@ export type Page = SanityDocument & {
   slug: string
   title: string
   text: BlockContentProps
+  bakes?: Bake[]
 }
 
 export type Picture = SanityDocument & {

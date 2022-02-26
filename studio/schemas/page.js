@@ -22,6 +22,12 @@ export default {
       title: 'Page Text',
       type: 'blockContent',
     },
+    {
+      name: 'bakes',
+      title: 'Bakes',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'bake' }] }],
+    },
   ],
 
   preview: {

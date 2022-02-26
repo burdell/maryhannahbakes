@@ -23,7 +23,6 @@ export const links: LinksFunction = () => {
 
 type PageData = {
   page: Page
-  bakes: Bake[] | undefined
 }
 
 export const loader: LoaderFunction = async ({ params }) => {
@@ -34,10 +33,7 @@ export const loader: LoaderFunction = async ({ params }) => {
     })
   }
 
-  const [page, bakes] = await Promise.all([
-    getPage(pageId),
-    pageId === 'bakes' ? getBakes() : undefined,
-  ])
+  const page = await getPage(pageId)
   if (!page) {
     throw new Response('Not Found', {
       status: 404,
@@ -45,23 +41,22 @@ export const loader: LoaderFunction = async ({ params }) => {
   }
 
   const response: PageData = {
-    bakes,
     page,
   }
   return response
 }
 
 export default function Index() {
-  const { page, bakes } = useLoaderData<PageData>()
+  const { page } = useLoaderData<PageData>()
 
   return (
     <>
       <Header />
       <PageContent heading={page.title}>
         {page.text && <BlockContent blocks={page.text} />}
-        {bakes && bakes.length > 0 ? (
+        {page.bakes && page.bakes.length > 0 ? (
           <div className="flex justify-center">
-            <BakeList bakes={bakes} />
+            <BakeList bakes={page.bakes} />
           </div>
         ) : null}
       </PageContent>

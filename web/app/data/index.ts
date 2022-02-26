@@ -12,8 +12,20 @@ export async function getPages() {
 }
 
 export async function getPage(pageId: string) {
-  const query =
-    '*[_type == "page" && slug.current == $pageId] { title, "slug": slug.current, text } | order(_updatedAt desc) [0]'
+  const query = `*[_type == "page" && slug.current == $pageId] { 
+      title,
+      "slug": slug.current,
+      text,
+      bakes[]->{
+        _id,
+        name,
+        body,
+        pictures[]{
+          asset->{url, assetId},
+          blurb
+        }
+      }
+    } | order(_updatedAt desc) [0]`
 
   const pageData = await getClient().fetch<Page>(query, { pageId })
   return pageData
