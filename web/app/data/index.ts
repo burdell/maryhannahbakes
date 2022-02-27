@@ -20,9 +20,9 @@ export async function getPage(pageId: string) {
         _id,
         name,
         body,
+        blurb,
         pictures[]{
           asset->{url, assetId},
-          blurb
         }
       }
     } | order(_updatedAt desc) [0]`
